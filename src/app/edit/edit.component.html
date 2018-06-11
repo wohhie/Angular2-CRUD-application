@@ -1,0 +1,40 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    Employee Entry Form: You can add an employee's details information into this EMS app.
+  </div>
+
+  <div class="panel-body">
+    <form (submit)="updateEmployee()">
+        <!-- Username -->
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" [(ngModel)]="model.name" name="name" placeholder="Enter Name">
+        </div>
+
+      <!-- Position -->
+      <div class="form-group">
+          <label for="username">Position</label>
+          <input type="text" class="form-control" [(ngModel)]="model.position" name="position" placeholder="Enter Position">
+        </div>
+
+      <!-- Department -->
+      <div class="form-group">
+          <label for="username">Department</label>
+          <input type="text" class="form-control" [(ngModel)]="model.department" name="department" placeholder="Enter Department">
+      </div>
+
+      <!-- Salary -->
+      <div class="form-group">
+          <label for="username">Salary</label>
+          <input type="text" class="form-control" [(ngModel)]="model.salary" name="salary" placeholder="Enter Salary">
+      </div>
+
+
+      <!-- Submit -->
+      <div class="form-group">
+          <button type="submit" class="btn btn-default btn-success">Create User</button>
+      </div>
+
+    </form>
+  </div>
+</div>
